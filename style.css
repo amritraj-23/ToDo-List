@@ -1,0 +1,147 @@
+/* Work On body */
+body {
+    width: 100%;
+    height: 100%;
+    animation-name: todo;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@keyframes todo {
+    0% {
+        background-image: url('https://images.unsplash.com/photo-1627441943833-8d930796dde7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url('https://images.unsplash.com/photo-1622084948546-75baef2503b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url('https://images.unsplash.com/photo-1629782326485-b9e296df3ce1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+}
+
+/* Main div */
+.main {
+    padding: 5px 10px;
+    max-width: 40%;
+    margin: auto;
+    background-color: #246a73;
+    border: 5px solid greenyellow;
+}
+
+/* Heading tag */
+
+.heading {
+    color: white;
+    padding: 10px 0px;
+    /* background-color: #04395e; */
+    background-color:#7400b8;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+}
+
+/* for All List items */
+
+.list,
+.delete,
+.update,
+.moveup,
+.movedown {
+    display: inline-block;
+    color: white
+}
+
+
+/* for list */
+.list {
+    padding-top: 7px;
+    width: 180px;
+    height: 30px;
+    text-align: center;
+    background-color:#023047;
+    border: 4px solid rgb(0, 255, 76);
+    border-radius: 5px;
+    color:white;
+
+}
+
+/* for deletion */
+
+.delete {
+    background-color: red;
+
+}
+
+/* for Updation */
+
+.update {
+    background-color: #ef476f;
+}
+
+/* for moveup */
+.moveup {
+    background-color: #4d194d;
+}
+
+
+/* for Move down */
+.movedown {
+    background-color: #ffd60a;
+}
+
+/* For All */
+
+.delete,
+.update,
+.moveup,
+.movedown {
+    width: 90px;
+    height: 30px;
+    padding-top: 7px;
+    margin-left: 14px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* for updation */
+#list {
+    margin-top: 30px;
+}
+
+/* for input box */
+
+input[type="text"] {
+    width: 500px;
+    height: 32px;
+    border: 4px inset #f72585;
+    /* color: yellow; */
+    background-color: yellow;
+    color:red;
+
+}
+
+
+
+
+/* for button */
+.btn {
+    margin-left: 20px;
+    width: 60px;
+    height: 40px;
+    font-size: 18px;
+    border: 4px solid #9d0208;
+}
