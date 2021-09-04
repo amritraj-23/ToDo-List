@@ -1,43 +1,19 @@
-/* Work On body */
 body {
-    width: 100%;
-    height: 100%;
-    animation-name: todo;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-}
-
-@keyframes todo {
-    0% {
-        background-image: url('https://images.unsplash.com/photo-1627441943833-8d930796dde7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    50% {
-        background-image: url('https://images.unsplash.com/photo-1622084948546-75baef2503b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    100% {
-        background-image: url('https://images.unsplash.com/photo-1629782326485-b9e296df3ce1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=801&q=80');
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-
+    /* background-image: url("https://images.unsplash.com/photo-1578861377460-c4536383d637?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"); */
+    background-image: url("https://images.unsplash.com/photo-1533139143976-30918502365b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Main div */
 .main {
     padding: 5px 10px;
-    max-width: 40%;
+    width: 40%;
+    height: 100%;
     margin: auto;
-    background-color: #246a73;
-    border: 5px solid greenyellow;
+    background-color: #f8f7ff;
+    /* border: 5px inset red; */
+    border: 8px inset #001845;
 }
 
 /* Heading tag */
@@ -46,7 +22,7 @@ body {
     color: white;
     padding: 10px 0px;
     /* background-color: #04395e; */
-    background-color:#7400b8;
+    background-color: #ff4800;
     margin-top: 30px;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
@@ -68,38 +44,56 @@ body {
 /* for list */
 .list {
     padding-top: 7px;
-    width: 180px;
+    width: 160px;
     height: 30px;
     text-align: center;
-    background-color:#023047;
-    border: 4px solid rgb(0, 255, 76);
-    border-radius: 5px;
-    color:white;
+    border: 4px inset rgb(0, 255, 76);
+    color: black;
 
 }
 
 /* for deletion */
 
 .delete {
-    background-color: red;
+    border: 2px inset red;
 
+}
+
+.delete:hover {
+    color: white;
+    background-color: #ff595e;
 }
 
 /* for Updation */
 
 .update {
+    border: 2px inset #ef476f;
+}
+
+.update:hover {
+    color: white;
     background-color: #ef476f;
 }
 
 /* for moveup */
 .moveup {
-    background-color: #4d194d;
+    border: 2px inset #4d194d;
+}
+
+.moveup:hover {
+    color: white;
+    background-color: #84e3c8;
 }
 
 
 /* for Move down */
 .movedown {
-    background-color: #ffd60a;
+    border: 2px inset #ffd60a;
+}
+
+.movedown:hover {
+    color: white;
+    background-color: #495057;
 }
 
 /* For All */
@@ -111,9 +105,10 @@ body {
     width: 90px;
     height: 30px;
     padding-top: 7px;
-    margin-left: 14px;
+    margin-left: 10px;
     text-align: center;
     border-radius: 5px;
+    color: black;
 }
 
 
@@ -125,12 +120,10 @@ body {
 /* for input box */
 
 input[type="text"] {
-    width: 500px;
+    width: 450px;
     height: 32px;
     border: 4px inset #f72585;
-    /* color: yellow; */
-    background-color: yellow;
-    color:red;
+    color: red;
 
 }
 
@@ -140,8 +133,37 @@ input[type="text"] {
 /* for button */
 .btn {
     margin-left: 20px;
-    width: 60px;
+    width: 100px;
     height: 40px;
     font-size: 18px;
-    border: 4px solid #9d0208;
+    border: 4px inset #0d47a1;
+    background-color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn:hover {
+    color: white;
+    background-color: aqua;
+}
+
+
+/* Apply Media Queries */
+
+@media only screen and (max-width:1160px) {
+    input[type="text"] {
+        width: 200px;
+
+    }
+}
+
+@media only screen and (max-width:500px) {
+    input[type="text"] {
+        width: 100px;
+
+    }
+
+    .list {
+        width: 100px;
+    }
+
 }

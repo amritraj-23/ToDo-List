@@ -5,10 +5,6 @@ let list = document.querySelector('#list');
 var arr = [];
 let i = 0;
 
-
-
-
-
 // Starting
 
 btn.addEventListener('click', () => {
@@ -17,7 +13,7 @@ btn.addEventListener('click', () => {
     if (inp != "") {
         arr[i] = inp;
         let res = document.createElement('span');
-        res.setAttribute('class','list');
+        res.setAttribute('class', 'list');
         res.innerText = arr[i];
         p.append(res);
         p.setAttribute('id', i);
@@ -26,7 +22,7 @@ btn.addEventListener('click', () => {
         // for deletion
 
         let del = document.createElement('span');
-        del.setAttribute('class','delete');
+        del.setAttribute('class', 'delete');
         del.innerText = 'Delete';
         p.append(del);
 
@@ -40,10 +36,10 @@ btn.addEventListener('click', () => {
         function myfun(di) {
             let count = document.getElementsByTagName('p');
             let n = count.length;
-            let k= di;
-            k=k++;
-            for (let j =k; j <= n; j++) {
-                count[j].setAttribute('id',di);
+            let k = di;
+            k = k++;
+            for (let j = k; j <= n; j++) {
+                count[j].setAttribute('id', di);
                 di++;
             }
 
@@ -54,12 +50,11 @@ btn.addEventListener('click', () => {
         // for Updation
 
         let Update = document.createElement('span');
-        Update.setAttribute('class','update');
+        Update.setAttribute('class', 'update');
         Update.innerText = 'Update';
         p.append(Update);
 
         Update.addEventListener('click', () => {
-            res.innerText = "";
             res.setAttribute('contenteditable', 'true');
         });
 
@@ -72,7 +67,7 @@ btn.addEventListener('click', () => {
         // for Move Up
 
         let up = document.createElement('span');
-        up.setAttribute('class','moveup');
+        up.setAttribute('class', 'moveup');
         up.innerText = 'Move Up';
         p.append(up);
 
@@ -92,7 +87,7 @@ btn.addEventListener('click', () => {
         // for move Down 
 
         let down = document.createElement('span');
-        down.setAttribute("class","movedown");
+        down.setAttribute("class", "movedown");
         down.innerText = 'Move Down';
         p.append(down);
 
@@ -119,5 +114,3 @@ btn.addEventListener('click', () => {
 
     }
 });
-
-
